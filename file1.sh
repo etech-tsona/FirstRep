@@ -1,4 +1,10 @@
 #!/bin/bash
+
+sudo apt update
+echo "This machine was powered by $(logname) and it has been running for `uptime`"
+echo "This machine was powered by $LOGNAME and it has been running for $(uptime)"
+echo "just to demo"
+
 #this script will be use to create git repositories
 echo -n " please enter the directory name: "
 read directory
@@ -19,3 +25,4 @@ if [ expression ]; then
 else
    Statement(s) to be executed if expression is not true
 fi
+
